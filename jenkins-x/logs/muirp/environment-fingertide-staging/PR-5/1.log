@@ -1,0 +1,33 @@
+
+Showing logs for build [32mmuirp-environment-fingertide-st-z99ld-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-nzsqn[0m
+{"level":"warn","ts":1567431981.8593578,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567431981.8598945,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmuirp-environment-fingertide-st-z99ld-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-gsqgn[0m
+{"level":"warn","ts":1567431982.1331348,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1567431982.1344042,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source /workspace/source/env\""}
+
+Showing logs for build [32mmuirp-environment-fingertide-st-z99ld-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmuirp-environment-fingertide-st-z99ld-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-muirp-environment-fingertide-st-qpjq5[0m
+{"level":"warn","ts":1567431986.165403,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1567431987.2279932,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/muirp/environment-fingertide-staging.git @ fd65e9c8a8efdd3b20a2926bf5bf87c71db7b53d in path /workspace/source"}
+
+Showing logs for build [32mmuirp-environment-fingertide-st-z99ld-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:5b885ac80fd83d655edd29d7e4bca2f4a50a00c4,5:fd65e9c8a8efdd3b20a2926bf5bf87c71db7b53d
+DEBUG: ran git fetch --unshallow origin fd65e9c8a8efdd3b20a2926bf5bf87c71db7b53d: 5b885ac80fd83d655edd29d7e4bca2f4a50a00c4: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 5b885ac80fd83d655edd29d7e4bca2f4a50a00c4 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge fd65e9c8a8efdd3b20a2926bf5bf87c71db7b53d in 
+Merged SHA fd65e9c8a8efdd3b20a2926bf5bf87c71db7b53d with commit message 'chore: Promote test-fingerlie3 to version 0.0.1' into base branch master
+
+Showing logs for build [32mmuirp-environment-fingertide-st-z99ld-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
