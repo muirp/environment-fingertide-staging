@@ -10,6 +10,3 @@ dependencies:
 - name: test-fingerlie3
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.1
-- name: test-fingerlie4
-  repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.2
